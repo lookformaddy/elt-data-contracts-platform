@@ -1,0 +1,11 @@
+customer_id,name,email,region,signup_date,lifetime_value
+1,Noah Reyes,customer1@example.com,east,2025-04-08,697.69
+2,Noah Brooks,customer2@example.com,central,2025-07-02,148.99
+3,Ivy Ali,customer3@example.com,central,2025-10-01,2806.23
+4,Jude Novak,customer4@example.com,south,2025-08-19,1390.95
+5,Ava Garcia,customer5@example.com,west,2025-06-09,777.4
+6,Ruby Patel,customer6@example.com,north,2025-07-04,1794.9
+7,Sam Brown,customer7@example.com,north,2025-12-15,2681.14
+8,Tara Brooks,customer8@example.com,central,2025-05-27,3143.2
+9,Sam Smith,customer9@example.com,north,2025-01-22,1139.49
+10,Leo Brooks,customer10@example.com,south,2025-02-13,1389.87

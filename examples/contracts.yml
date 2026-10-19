@@ -1,0 +1,42 @@
+# Data contracts for the demo pipeline — the same definitions the code in
+# src/elt_platform/demo.py builds programmatically, in declarative form.
+# Load with elt_platform.contracts.load_contracts("examples/contracts.yml").
+contracts:
+  - name: customers
+    table: customers
+    description: One row per customer; producer-owned dimension.
+    primary_key: [customer_id]
+    freshness_sla_hours: 43800
+    freshness_column: signup_date
+    columns:
+      - {name: customer_id, type: int, nullable: false, unique: true}
+      - {name: name, type: string, nullable: false, min_length: 1}
+      - {name: email, type: string, nullable: false, pattern: "@"}
+      - name: region
+        type: string
+        nullable: false
+        allowed_values: [north, south, east, west, central]
+      - {name: signup_date, type: date, nullable: false}
+      - {name: lifetime_value, type: float, nullable: false, min_value: 0}
+  - name: orders
+    table: orders
+    description: One row per order; amounts are non-negative by contract.
+    primary_key: [order_id]
+    columns:
+      - {name: order_id, type: int, nullable: false, unique: true}
+      - {name: customer_id, type: int, nullable: false}
+      - {name: amount, type: float, nullable: false, min_value: 0}
+      - {name: quantity, type: int, nullable: false, min_value: 1}
+      - name: status
+        type: string
+        nullable: false
+        allowed_values: [placed, shipped, delivered, cancelled]
+      - {name: order_date, type: date, nullable: false}
+  - name: customer_summary
+    table: customer_summary
+    description: Transform output - per-customer order aggregates.
+    primary_key: [customer_id]
+    columns:
+      - {name: customer_id, type: int, nullable: false, unique: true}
+      - {name: order_count, type: int, nullable: false, min_value: 0}
+      - {name: total_spend, type: float, nullable: false, min_value: 0}

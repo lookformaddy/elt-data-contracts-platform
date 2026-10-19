@@ -1,0 +1,122 @@
+[
+  {
+    "order_id": 1001,
+    "customer_id": 1,
+    "amount": 118.0,
+    "quantity": 2,
+    "status": "cancelled",
+    "order_date": "2026-10-12"
+  },
+  {
+    "order_id": 1002,
+    "customer_id": 2,
+    "amount": 184.01,
+    "quantity": 4,
+    "status": "placed",
+    "order_date": "2026-10-17"
+  },
+  {
+    "order_id": 1003,
+    "customer_id": 7,
+    "amount": 232.76,
+    "quantity": 5,
+    "status": "cancelled",
+    "order_date": "2026-10-13"
+  },
+  {
+    "order_id": 1004,
+    "customer_id": 3,
+    "amount": 27.8,
+    "quantity": 1,
+    "status": "placed",
+    "order_date": "2026-10-13"
+  },
+  {
+    "order_id": 1005,
+    "customer_id": 3,
+    "amount": 42.82,
+    "quantity": 5,
+    "status": "cancelled",
+    "order_date": "2026-10-05"
+  },
+  {
+    "order_id": 1006,
+    "customer_id": 7,
+    "amount": 240.9,
+    "quantity": 5,
+    "status": "delivered",
+    "order_date": "2026-10-06"
+  },
+  {
+    "order_id": 1007,
+    "customer_id": 7,
+    "amount": 30.09,
+    "quantity": 5,
+    "status": "placed",
+    "order_date": "2026-10-06"
+  },
+  {
+    "order_id": 1008,
+    "customer_id": 1,
+    "amount": 336.44,
+    "quantity": 3,
+    "status": "delivered",
+    "order_date": "2026-10-03"
+  },
+  {
+    "order_id": 1009,
+    "customer_id": 9,
+    "amount": 251.29,
+    "quantity": 5,
+    "status": "placed",
+    "order_date": "2026-10-04"
+  },
+  {
+    "order_id": 1010,
+    "customer_id": 10,
+    "amount": 185.68,
+    "quantity": 3,
+    "status": "delivered",
+    "order_date": "2026-10-17"
+  },
+  {
+    "order_id": 1011,
+    "customer_id": 8,
+    "amount": 70.89,
+    "quantity": 1,
+    "status": "delivered",
+    "order_date": "2026-10-02"
+  },
+  {
+    "order_id": 1012,
+    "customer_id": 10,
+    "amount": 110.91,
+    "quantity": 2,
+    "status": "placed",
+    "order_date": "2026-10-18"
+  },
+  {
+    "order_id": 1013,
+    "customer_id": 2,
+    "amount": 122.32,
+    "quantity": 3,
+    "status": "cancelled",
+    "order_date": "2026-10-02"
+  },
+  {
+    "order_id": 1014,
+    "customer_id": 8,
+    "amount": 386.79,
+    "quantity": 5,
+    "status": "placed",
+    "order_date": "2026-10-12"
+  },
+  {
+    "order_id": 1015,
+    "customer_id": 3,
+    "amount": 259.76,
+    "quantity": 2,
+    "status": "delivered",
+    "order_date": "2026-10-04"
+  }
+]
